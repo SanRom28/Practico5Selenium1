@@ -1,24 +1,28 @@
 package Clase3MetodosParte1;
-
-import java.util.Scanner;
+//Crear un método que retorne verdadero si y sólo si el número es par,
+// e lo contrario, debe retornar falso.
+        import java.util.Scanner;
 
 public class Ejercicio8 {
     public static void main(String args[]) {
         Scanner input = new Scanner(System.in);
         System.out.println("Ingrese un numero");
         int num = input.nextInt();
-        System.out.println("La sumatoria desde 1 hasta el numero Ingresado es de " + sumatoria(num));
-        sumatoria(num);
-    }
-
-    public static int sumatoria(int num) {
-
-
-        int sumatoria = 0;
-        for (int i = 1; i <= num; i++) {
-            sumatoria = sumatoria + 1;
+        if (esPar(num) == true) {
+            System.out.println("El numero es par");
+        } else {
+            System.out.println("eL numero es impar");
         }
-        return sumatoria;
-
     }
-}
+    public static boolean esPar(int num){
+
+            if (num % 2 == 0) {
+            return true;
+            } else {
+                return false;
+
+            }
+        }
+    }
+
+

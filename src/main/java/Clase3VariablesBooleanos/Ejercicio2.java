@@ -13,8 +13,8 @@ public class Ejercicio2 {
 
             System.out.println("Ingrese un numero");
             int num = input.nextInt();
-            boolean esMenor= MenorACero(num);
-            if (esMenor== true) {
+            boolean esMenor = MenorACero(num);
+            if (esMenor == true) {
                 System.out.println("El Numero es Menor a cero");
             } else {
                 System.out.println("El Numero es Mayor a Cero");
